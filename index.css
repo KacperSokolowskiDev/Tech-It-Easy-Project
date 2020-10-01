@@ -1,13 +1,25 @@
-/*CSS Header*/
-header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    justify-content: center;
-    background-image: url(polka_dot_paper.png);
-    width: 100%;
 
+/*CSS Header*/
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background:#ffffff; 
+    font-family: sans-serif;
 }
+header {
+    position: relative;
+    overflow: hidden;
+    background: url(cellphone-1082246_960_720.jpg) no-repeat center;
+    background-size: cover;
+    height: 800px;
+    object-fit: cover;
+    width: auto;
+}
+.logo img {
+    border-radius: 60%;
+ }
+
 
 /*CSS Section Info*/
 .etape1{
@@ -19,6 +31,7 @@ header {
 .etape3{
     display: flex;
 }
+
 /*CSS Section Form*/
 
 .footer{
