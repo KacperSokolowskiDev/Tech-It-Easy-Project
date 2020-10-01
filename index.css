@@ -10,15 +10,36 @@ body {
 header {
     position: relative;
     overflow: hidden;
-    background: url(cellphone-1082246_960_720.jpg) no-repeat center;
-    background-size: cover;
-    height: 800px;
-    object-fit: cover;
-    width: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cellphone-1082246_960_720.jpg"); 
+    height:100vh;  
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: white;  
+    background-position: center;
 }
-.logo img {
-    border-radius: 60%;
- }
+
+h1 {
+    text-align: center;
+    text-shadow:   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000,
+     1px 1px 2px #141414,
+     1px 1px 3px #141414,
+     1px 1px 5px #141414,
+     1px 1px 7px #141414,
+     1px 1px 10px #141414,
+     1px 1px 12px #141414,
+     1px 1px 18px #141414;color:#fff;
+     background-color:#EDFFF6;
+}
+.logo {
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    position: absolute;   
+    
+}
+
 
 
 /*CSS Section Info*/
