@@ -1,13 +1,8 @@
-header {
+header {  
     display: flex;
     align-items: center;
     padding: 20px;
     justify-content: center;
     background-image: url(polka_dot_paper.png);
     width: 100%;
-
-}
-
-}
-
-
+ }
