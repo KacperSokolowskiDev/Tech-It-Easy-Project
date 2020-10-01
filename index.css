@@ -8,12 +8,23 @@ header {
     width: 100%;
 
 }
+
+/*CSS Section Info*/
+.etape1{
+    display: flex;
+}
+.etape2{
+    display: flex;
+}
+.etape3{
+    display: flex;
+}
 /*CSS Section Form*/
 
-.form{
+.footer{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
 }
 /*//////////////*/
