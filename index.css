@@ -40,7 +40,6 @@ h1 {
     
 }
 
-
 /*CSS Section Info*/
 
 .etape1{
@@ -68,13 +67,48 @@ h1 {
     width: 40%;
 }
 
+.number{
+
+}
+
 /*CSS Section Form*/
 
 .footer{
+    background-color: #023255;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+form{
+    color: #fff04e;
+}
+
+#formInput{
+    margin: 15px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff04e;
+    color: white;
+}
+
+#formInput::placeholder{
+    color: #fff04e;
+}
+
+.icons{
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}
+
+a{
+    margin: 0 20px;
+    color: #fff04e;
+}
+
+a:hover{
+    color: #ffffff;
 }
 /*//////////////*/
 

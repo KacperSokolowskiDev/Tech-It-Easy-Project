@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech-It-Easy Media Bruxelles</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
@@ -19,7 +21,7 @@
         <h2>Lorem ipsum dolor sit amet, mea epicuri prodesset ad, ceteros ullamcorper in eam. Inimicus similique et ius. Est adhuc dicta eu.</h2>
         <div class="etape1">
             <div class="text">
-                <h3>1</h3>
+                <h3 class="number">1</h3>
                 <h3>Choisir Photo</h3>
             </div>
             <img class="imgTest" src="image.png" alt="ImageTest">
@@ -27,7 +29,7 @@
         <hr>
         <div class="etape2">
             <div class="text">
-                <h3>2</h3>
+                <h3 class="number">2</h3>
                 <h3>Editer la photo</h3>
             </div>
             <img class="imgTest" src="image.png" alt="">
@@ -35,7 +37,7 @@
         <hr>
         <div class="etape3">
             <div class="text">
-                <h3>3</h3>
+                <h3 class="number">3</h3>
                 <h3>Poster votre photo sur les réseaux sociaux</h3>
             </div>
             <img class="imgTest" src="image.png" alt="">
@@ -46,13 +48,16 @@
         <form action="">
             <h3>Bla bla bla (client)</h3>
             <label for="">Adresse Email</label><br>
-            <input name = "email" type="email" id="" required> <br>
+            <input name = "email" type="email" placeholder="example@gmail.com" autocomplete="off" id="formInput" required> <br>
             <button type="submit">Envoyer</button>
         </form>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fas fa-envelope"></i>
+        <div class="icons">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fas fa-envelope"></i></a>
+        </div>
+        
     </section>
     <script src="index.js"></script>
 </body>
