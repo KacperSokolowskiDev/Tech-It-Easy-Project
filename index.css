@@ -10,23 +10,25 @@ body {
 header {
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("phone.jpg"); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("phone.jpg") ; 
     height:100vh;  
     background-repeat: no-repeat;
     background-size: cover; 
-    background-color: white;  
     background-position: center;
-    text-align: center;
-   
+    text-align: center;    
 }
 
+
 h1 {
-  align-items: center;
-  margin-top: 600px;
-  color: aliceblue;
-  font-size: 50px;
-  letter-spacing: 0,2em;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 0,2em;
+    margin-top: 30%;
+    color: gainsboro;
+    font-family: 'Ibarra Real Nova', serif;
 }
+
+
 
 
 
