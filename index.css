@@ -44,16 +44,31 @@ h1 {
 }
 
 
-
 /*CSS Section Info*/
+
 .etape1{
     display: flex;
+    flex-direction: column;
 }
 .etape2{
     display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 }
+
 .etape3{
     display: flex;
+    flex-direction: column;
+}
+
+.text{
+    display: flex;
+    align-items: flex-end;
+}
+
+.imgTest{
+    height: auto;
+    width: 40%;
 }
 
 /*CSS Section Form*/
@@ -66,3 +81,26 @@ h1 {
 }
 /*//////////////*/
 
+ /*Media Query*/
+
+@media only screen and (max-width: 600px) {
+    h2{
+        display: flex;
+        flex-direction: column;
+    }
+    .etape1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .etape2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .etape3{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
