@@ -33,7 +33,10 @@ h1 {
      1px 1px 18px #141414;color:#fff;
      background-color:#EDFFF6;
 }
+
+
 .logo {
+    flex: 1;
     object-fit: contain;
     mix-blend-mode: multiply;
     position: absolute;   
