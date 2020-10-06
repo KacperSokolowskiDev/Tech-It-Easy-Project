@@ -1,30 +1,28 @@
-
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    /* height: 100%;
+body { 
+    height: 100%;
     margin: 0;
-    padding: 0; */
+    padding: 0;
     background:#ffffff; 
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.3rem;
 }
 /*CSS Header*/
 
-header {
+header{ 
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("phone.jpg") ; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("img/phone.jpg") ; 
     height:100vh;  
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-    text-align: center;    
+    font-family: 'Bebas Neue', sans-serif;
 }
-
 
 h1 {
     text-align: center;
@@ -35,16 +33,26 @@ h1 {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-
 .logo {
-    flex: 1;
-    object-fit: contain;
-    mix-blend-mode: multiply;
-    position: absolute;   
-    top: 50%;
-    left: 50%;
-    transform: translate(-210%,-140%);
+    margin-left: 50px;
 }
+
+.ml15 {
+    font-weight: 800;
+    font-size: 3.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 20% ;    
+    text-align: center;
+    color:#FFBF00;
+    background: rgba(177, 161, 161, 0.2);
+  }
+  
+  .ml15 .word {
+    display: inline-block;
+    line-height: 1em;
+  }
 
 /*CSS Section container*/
 
@@ -55,7 +63,16 @@ h1 {
     padding: 0 2rem;
 }
 
-img {
+.description{
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.description h3{
+    margin: 2rem;
+}
+
+.info {
     width: 100%;
 }
 
@@ -83,46 +100,32 @@ img {
     order: 2;
 }
 
-/*CSS Section Form*/
-
-.footer{
-    background-color: #023255;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
+/*CSS Section Formulaire*/
 
 form{
-    color: #fff04e;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #formInput{
     margin-top: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     background: transparent;
     border: 0;
-    border-bottom: 2px solid #fff04e;
-    color: white;
+    border-bottom: 2px solid #000000;
+    color: #000000; 
+    outline: none;
+}
+
+.h3-form{
+    padding: 20px;
 }
 
 #formInput::placeholder{
-    color: #fff04e;
-}
-
-.icons{
-    font-size: 1.5rem;
-}
-
-a{
-    margin: 0 20px;
-    color: #fff04e;
-    text-decoration: none;
-}
-
-a:hover{
-    color: #ffffff;
+    text-align: center;
+    color: #000000;
 }
 
 button{
@@ -130,18 +133,17 @@ button{
     width: 170px;
     margin-bottom: 20px;
     background: transparent;
-    color: #fff04e;
     position: relative;
     z-index: 1;
     overflow: hidden;
 
 }
 button:hover{
-    color: #023255;
+    color: #ffffff;
 }
 button::after{
     content:"";
-    background:#fff04e;
+    background:#000000;
     position: absolute;
     z-index: -1;
     display: block;
@@ -163,22 +165,56 @@ button.slideRight::after{
     right: -100%;
 }
 
-/*Media Query*/
-@media(max-width: 700px){
+/*CSS Section footer*/
+
+.footer{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.icons{
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+a{
+    margin: 0 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff04e;
+}
+
+.copyright{
+    font-size: 0.7rem;
+} 
+
+ /*Media Query*/
+
+ @media only screen and (max-width:900px) {
+    header { margin-top: 100px;}
+}
+ @media(max-width: 700px){
     .card {
         display: block;
     }
-    .footer{
+    .footer {
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-top: 30px;
     }
-    form{
+    /* form{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         margin: 30px 0;
-    }
+    } */
 }

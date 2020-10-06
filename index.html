@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech-It-Easy Media Bruxelles</title>
+    <title>Tech-It-Easy Média Bruxelles</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
     <header>
     <div class="logo"> 
-    <img src="Logo_JPG.jpg" height="300px" width=auto >
+    <img src="img/Jaune.png"  width="150px" height="auto">
     </div> 
-    <div>   
-    <h1> Astuces pour booster votre créactivité dans la photographie!<br>Avec votre smartphone</h1>
-    </div>
+    <h1 class="ml15">
+        <span class="word">Booster votre créactivité</span>
+        <span class="word">en photographie</span>
+    </h1>
     </header>
+    <section class="description">
+        <h2>Vous voulez rendre vos photos plus belles et les poster sur vos réseaux sociaux favoris ?</h2>
+        <h3>Ici on va vous montrer comment vous pouvez le faire en 3 étapes !</h3>
+    </section>
     <main class="container">
         <section class="card" data-aos="fade-right">
-            <img src="img/image.png" alt="choosing">
+            <img class="info" src="img/image.png" alt="choosing">
             <div>
                 <h3>Choisir la photo</h3>
                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                     Tempora consequuntur tenetur distinctio eligendi necessitatibus 
                     commodi illo in voluptatibus unde? Beatae!</p>
             </div>
-            <!-- <h2>Lorem ipsum dolor sit amet, mea epicuri prodesset ad, ceteros ullamcorper in eam. Inimicus similique et ius. Est adhuc dicta eu.</h2>-->
         </section> 
         <section class="card" data-aos="fade-left">
-            <img src="img/annie-spratt-ihDcta7Kvqg-unsplash.jpg" alt="Editing">
+            <img class="info" src="img/annie-spratt-ihDcta7Kvqg-unsplash.jpg" alt="Editing">
             <div>
                 <h3>Editer la photo</h3>
                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -39,7 +44,7 @@
             </div>
         </section>
         <section class="card" data-aos="fade-right">
-            <img src="img/annie-spratt-ihDcta7Kvqg-unsplash.jpg" alt="Publishing">
+            <img class="info" src="img/annie-spratt-ihDcta7Kvqg-unsplash.jpg" alt="Publishing">
             <div>
                 <h3>Publier le resultat</h3>
                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -47,28 +52,32 @@
                     commodi illo in voluptatibus unde? Beatae!</p>
             </div>
         </section>
+        <section class="formulaire">
+            <form action="">
+                <h3 class="h3-form"> Si vous voulez en savoir plus sur les différents moyens d'éditer vos photos. Vous pouvez nous laisser votre adresse Email :</h3>
+                <!-- <label for="">Adresse Email</label><br> -->
+                <input name = "email" type="email" placeholder="example@gmail.com" autocomplete="off" id="formInput" required> <br>
+                <button class="slideRight" type="submit"><strong>Envoyer</strong></button>
+            </form>
+        </section>
     </main>
-    
     <section class="footer">
-        <form action="">
-            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</h3>
-            <label for="">Adresse Email</label><br>
-            <input name = "email" type="email" placeholder="example@gmail.com" autocomplete="off" id="formInput" required> <br>
-            <button class="slideRight" type="submit"><strong>Envoyer</strong></button>
-        </form>
         <div class="icons">
         <a href=""><i class="fab fa-facebook"></i></a>
         <a href=""><i class="fab fa-youtube"></i></a>
         <a href=""><i class="fab fa-instagram"></i></a>
         <a href=""><i class="fas fa-envelope"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
         </div>
-        
+        <p class="copyright">© 2020 Tech-It-Easy Média Bruxelles</p>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
             offset: 400,
-            duration: 1000
+            duration: 1000,
+            disable: 'phone'
         });
     </script>
     <script src="index.js"></script>
