@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech-It-Easy Média Bruxelles</title>
+
+    <title>Tech-It-Easy Media Bruxelles</title>
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
 </head>
 <body>
-    <header>
-    <div class="logo"> 
-    <img src="img/Jaune.png"  width="150px" height="auto">
-    </div> 
-    <h1 class="ml15">
-        <span class="word">Booster votre créactivité</span>
-        <span class="word">en photographie</span>
-    </h1>
-    </header>
+    <div id="hero">
+        <nav>
+            <img class="logo" src="img/Bleu.png" alt="logo">
+        </nav>
+        <div class="texture"></div>
+        <video loop muted autoplay preload="auto">
+            <source src="video3.MOV" type="video/mp4"> 
+            Your browser does not support the video tag
+        </video>
+        <div class="caption">
+            <h1>Ameliorer vos skills sur Instagram !</h1>
+            <h2>Voici les astuces faites pour vous !</h2>
+        </div>
+    </div>
     <section class="description">
         <h2>Vous voulez rendre vos photos plus belles et les poster sur vos réseaux sociaux favoris ?</h2>
         <h3>Ici on va vous montrer comment vous pouvez le faire en 3 étapes !</h3>
@@ -54,7 +64,7 @@
         </section>
         <section class="formulaire">
             <form action="">
-                <h3 class="h3-form"> Si vous voulez en savoir plus sur les différents moyens d'éditer vos photos. Vous pouvez nous laisser votre adresse Email :</h3>
+                <h3 class="h3-form"> Si vous voulez en savoir plus sur les différents moyens d'éditer vos photos. Laisser nous votre adresse Email !</h3>
                 <!-- <label for="">Adresse Email</label><br> -->
                 <input name = "email" type="email" placeholder="example@gmail.com" autocomplete="off" id="formInput" required> <br>
                 <button class="slideRight" type="submit"><strong>Envoyer</strong></button>
@@ -66,7 +76,6 @@
         <a href=""><i class="fab fa-facebook"></i></a>
         <a href=""><i class="fab fa-youtube"></i></a>
         <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fas fa-envelope"></i></a>
         <a href=""><i class="fab fa-linkedin-in"></i></a>
         </div>
         <p class="copyright">© 2020 Tech-It-Easy Média Bruxelles</p>
@@ -80,6 +89,7 @@
             disable: 'phone'
         });
     </script>
-    <script src="index.js"></script>
+    <script src="JS/object-fit-video.js"></script>
+    <script src="JS/index.js"></script>
 </body>
 </html>
