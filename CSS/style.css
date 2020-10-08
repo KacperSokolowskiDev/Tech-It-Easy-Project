@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 
@@ -35,7 +35,7 @@
     top: 0;
     left: 0;
     z-index: 15;
-    background: url('../texture.png');
+    background: url('../assault.png');
 }
 
 #hero .caption{
@@ -66,6 +66,10 @@ nav{
     z-index: 20;
 }
 
+.logo{
+    margin: 2rem 0 0 3rem;
+}
+
 @media screen and (Max-width:700px) /*Phones*/
 {
     #hero .caption h1{
@@ -73,9 +77,11 @@ nav{
     }
     #hero .caption h2{
         font-size: 1.75rem;
+        margin-bottom: 2rem;
     }
     .logo{
         width: 20%;
+        margin: 0;
     }
 
 }
@@ -90,6 +96,7 @@ nav{
     }
     .logo{
         width: 40%;
+        margin: 0;
     }
 }
 
